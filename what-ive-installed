@@ -1,0 +1,27 @@
+Alacritty -> %APPDATA%/alacritty symlinked with .config/alacritty/alacritty.yml
+    in order to get mouse events working I had to:
+    Rename your original conhost.exe to other names like conhost.exe_bak in C:\Windows\System32\
+    Go to Windows Terminal path C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_<VERSION information>\OpenConsole.exe
+    e.g.:C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.0.1811.0_x64__8wekyb3d8bbwe\OpenConsole.exe
+    Copy and rename OpenConsole.exe to C:\Windows\System32\conhost.exe
+    Reopen your alacrity and open wsl then tmux, you can enjoy~
+    BTW, please make sure you keep winpty_backend: false in alacrity config.
+
+WSL 2.0 -> Ubuntu 20.04 LTS
+zsh
+oh-my-zsh
+starship prompt
+git -> comes with Ubuntu 20.04 LTS
+tmux -> comes with Ubunut 20.04 LTS
+nvm -> "We strongly recommend using a Node version manager" - NPM. in ~/.nvm
+    node LTS 16 -> inside ~/.nvm/versions/
+    "Whilst Truffle and Hardhat can be installed globally we recommend installing locally in each project so that you can control the version on a project by project basis." - OppenZeppelin. so using 'npx truffle init' wherever applicable
+tree
+nvim -> I had to add a apt-get repository: ppa:neovim-ppa/stable for 0.6.1
+vscode -> on windows
+ditto -> /{user}/Downloads/Ditto... Password manager + I blocked outbound network requests from ditto in windows Firewall settings
+notion
+firefox quantum -> Tab Session Manager + ublock Origin -> policies.json located in /mnt/C/Program\ Files/Firefox/ Developer\ Edition/distribution : I turned off updates
+calibre -> {user}/Calibre Library/
+obsidian -> C:\Users\{user}\AppData\Local\Obsidian | Vault at Documents/obsidian/
+ripgrep -> from apt-get v11.0.2-1 (the latest release 13 seems to have failing builds and is probably not yet upgraded in the debian package manager)

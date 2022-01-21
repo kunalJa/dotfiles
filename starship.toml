@@ -1,0 +1,32 @@
+# Inserts a blank line between shell prompts
+add_newline = false
+
+[directory]
+style = "black bold dimmed"
+
+[time]
+disabled = true
+
+[aws]
+disabled = true
+
+[battery]
+disabled = true
+
+[status]
+disabled = true
+
+[shell]
+disabled = true
+
+[cmd_duration]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[memory_usage]
+disabled = true
+
+[package]
+disabled = true
