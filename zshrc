@@ -54,8 +54,12 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="nvim ~/.config/zshrc"
+alias vim="nvim"
+alias v="nvim"
+alias projects="cd ~/dev/projects/; ls -al"
+alias ls="ls -a"
+alias ll="ls -al"
 
 bindkey -v
 bindkey -r '\ec' # to disable this fzf launch
