@@ -19,3 +19,7 @@ tmp/**/*
 nvim/.netrwhist
 nvim/plugged/
 truffle-nodejs/
+solana/
+hardhat-nodejs/
+nextjs-nodejs/
+wslu/

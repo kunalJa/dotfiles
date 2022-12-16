@@ -58,8 +58,11 @@ alias zshconfig="nvim ~/.config/zshrc"
 alias vim="nvim"
 alias v="nvim"
 alias projects="cd ~/dev/projects/; ls -al"
-alias ls="ls -a"
-alias ll="ls -al"
+alias ls="ls -a --color=auto"
+alias ll="ls -al --color=auto"
+alias cs="cd"
+alias cd..="cd .."
+alias grep="rg"
 
 bindkey -v
 bindkey -r '\ec' # to disable this fzf launch
@@ -78,3 +81,5 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # Remap fzf find_fils CTRL-T to CTRL-P
 bindkey '^P' fzf-file-widget
 bindkey '^T' transpose-chars
+
+export PATH="/home/kunal/.local/share/solana/install/active_release/bin:$PATH"

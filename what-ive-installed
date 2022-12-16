@@ -18,6 +18,7 @@ nvm -> "We strongly recommend using a Node version manager" - NPM. in ~/.nvm
     "Whilst Truffle and Hardhat can be installed globally we recommend installing locally in each project so that you can control the version on a project by project basis." - OppenZeppelin. so using 'npx truffle init' wherever applicable
 tree
 nvim -> I had to add a apt-get repository: ppa:neovim-ppa/stable for 0.6.1
+    Added vim plugs telescope and harpoon
 vscode -> on windows
 ditto -> /{user}/Downloads/Ditto... Password manager + I blocked outbound network requests from ditto in windows Firewall settings
 notion
@@ -25,3 +26,5 @@ firefox quantum -> Tab Session Manager + ublock Origin -> policies.json located 
 calibre -> {user}/Calibre Library/
 obsidian -> C:\Users\{user}\AppData\Local\Obsidian | Vault at Documents/obsidian/
 ripgrep -> from apt-get v11.0.2-1 (the latest release 13 seems to have failing builds and is probably not yet upgraded in the debian package manager)
+Rust -> rustc, rustup, and cargo -> ~/.cargo/bin -> to uninstall use `rustup self uninstall`
+solana-cli -> 

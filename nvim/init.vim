@@ -33,7 +33,9 @@ set showcmd
 call plug#begin('~/.config/nvim/plugged')
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'ThePrimeagen/harpoon'
 call plug#end()
+" Need to run `:source $MYVIMRC` when adding new plugins
 
 " maps
 let mapleader = "\<Space>"
@@ -49,17 +51,21 @@ vnoremap gk k
 
 inoremap jk <ESC>
 
-" Move a line up and down
+" move a line up and down
 nnoremap <A-j> :<C-u>silent! move+<CR>==
 nnoremap <A-k> :<C-u>silent! move-2<CR>==
 xnoremap <A-j> :<C-u>silent! '<,'>move'>+<CR>gv=gv
 xnoremap <A-k> :<C-u>silent! '<,'>move-2<CR>gv=gv
 
-" Find files using Telescope command-line sugar.
+" find files using Telescope command-line sugar.
 nnoremap <C-p> <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>01~
+
+" harpoon
+nnoremap <C-e> :lua require("harpoon.ui").toggle_quick_menu()<CR>
+nnoremap <leader>a :lua require("harpoon.mark").add_file()<CR>
 
 " theme
 colorscheme ron 
