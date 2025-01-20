@@ -65,7 +65,6 @@ alias cd..="cd .."
 alias grep="rg"
 
 bindkey -v
-bindkey -r '\ec' # to disable this fzf launch
 export KEYTIMEOUT=1
 
 eval "$(starship init zsh)"
@@ -74,6 +73,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# export FZF_ALT_C_COMMAND="" # disables fzf cd
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow -g "!.git/"'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
@@ -81,5 +81,3 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # Remap fzf find_fils CTRL-T to CTRL-P
 bindkey '^P' fzf-file-widget
 bindkey '^T' transpose-chars
-
-export PATH="/home/kunal/.local/share/solana/install/active_release/bin:$PATH"

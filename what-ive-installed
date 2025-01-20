@@ -8,6 +8,7 @@ Alacritty -> %APPDATA%/alacritty symlinked with .config/alacritty/alacritty.yml
     BTW, please make sure you keep winpty_backend: false in alacrity config.
 
 WSL 2.0 -> Ubuntu 20.04 LTS
+        -> WSLU utilities like wslvar and wslview
 zsh
 oh-my-zsh
 starship prompt
@@ -19,12 +20,15 @@ nvm -> "We strongly recommend using a Node version manager" - NPM. in ~/.nvm
 tree
 nvim -> I had to add a apt-get repository: ppa:neovim-ppa/stable for 0.6.1
     Added vim plugs telescope and harpoon
+make, cmake, ninja-build, g++, gcc
 vscode -> on windows
 ditto -> /{user}/Downloads/Ditto... Password manager + I blocked outbound network requests from ditto in windows Firewall settings
 notion
 firefox quantum -> Tab Session Manager + ublock Origin -> policies.json located in /mnt/C/Program\ Files/Firefox/ Developer\ Edition/distribution : I turned off updates
+[NOW-UNINSTALLED] Chrome -> Installed in wsl debian from "wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb" -> which created /usr/bin/google-chrome
+chromedriver_win32 -> I added it to path for selenium usage this is in Windows C/ProgramFiles
 calibre -> {user}/Calibre Library/
 obsidian -> C:\Users\{user}\AppData\Local\Obsidian | Vault at Documents/obsidian/
 ripgrep -> from apt-get v11.0.2-1 (the latest release 13 seems to have failing builds and is probably not yet upgraded in the debian package manager)
 Rust -> rustc, rustup, and cargo -> ~/.cargo/bin -> to uninstall use `rustup self uninstall`
-solana-cli -> 
+[NOW-UNINSTALLED] solana-cli -> 
