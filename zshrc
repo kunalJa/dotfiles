@@ -81,3 +81,8 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # Remap fzf find_fils CTRL-T to CTRL-P
 bindkey '^P' fzf-file-widget
 bindkey '^T' transpose-chars
+
+# CRON and CRONTAB
+service cron status || sudo service cron start
+
+. "$HOME/.local/bin/env"
